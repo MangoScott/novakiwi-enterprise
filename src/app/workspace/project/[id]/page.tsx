@@ -1,4 +1,4 @@
-"use client"
+""
 
 import { ProgressSteps } from "@/components/project/progress-steps"
 import { ChatInterface } from "@/components/project/chat-interface"
