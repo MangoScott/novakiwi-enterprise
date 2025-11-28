@@ -21,31 +21,36 @@ export default function LoginPage() {
                     <div className="mx-auto h-12 w-12 rounded-xl bg-accent mb-4" />
                     <CardTitle className="text-2xl">Welcome back</CardTitle>
                     <CardDescription>
-                        Enter your email to sign in to your workspace
+                        Click below to explore the demo dashboards
                     </CardDescription>
                 </CardHeader>
                 <CardContent className="space-y-4">
                     <div className="space-y-2">
-                        <Input type="email" placeholder="name@company.com" />
+                        <Input type="email" placeholder="name@company.com" disabled />
                     </div>
-                    <Button className="w-full" size="lg">
-                        Sign In with SSO
-                    </Button>
+                    <Link href="/workspace" className="block">
+                        <Button className="w-full" size="lg">
+                            View Workspace Demo
+                        </Button>
+                    </Link>
                     <div className="relative">
                         <div className="absolute inset-0 flex items-center">
                             <span className="w-full border-t" />
                         </div>
                         <div className="relative flex justify-center text-xs uppercase">
                             <span className="bg-background px-2 text-muted-foreground">
-                                Or continue with
+                                Or view admin panel
                             </span>
                         </div>
                     </div>
-                    <Button variant="outline" className="w-full">
-                        Sign In with Email
-                    </Button>
+                    <Link href="/admin" className="block">
+                        <Button variant="outline" className="w-full">
+                            View Admin Dashboard
+                        </Button>
+                    </Link>
                 </CardContent>
             </Card>
         </div>
     )
 }
+```
