@@ -28,11 +28,10 @@ export function Sidebar() {
     return (
         <div className="flex h-screen w-64 flex-col border-r bg-surface">
             <div className="p-6">
-                <div className="flex items-center gap-2 mb-8">
+                <Link href="/workspace" className="flex items-center gap-2 mb-8 hover:opacity-80 transition-opacity">
                     <div className="h-8 w-8 rounded-lg bg-accent" />
                     <span className="text-xl font-bold tracking-tight">NovaKiwi</span>
-                </div>
-
+                </Link>
                 <Button className="w-full justify-start gap-2" size="lg">
                     <Plus className="h-4 w-4" />
                     New Project

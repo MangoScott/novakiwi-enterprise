@@ -27,10 +27,10 @@ export function AdminSidebar() {
     return (
         <div className="flex h-screen w-64 flex-col border-r bg-surface">
             <div className="p-6">
-                <div className="flex items-center gap-2 mb-2">
+                <Link href="/admin" className="flex items-center gap-2 mb-2 hover:opacity-80 transition-opacity">
                     <div className="h-8 w-8 rounded-lg bg-accent" />
                     <span className="text-xl font-bold tracking-tight">NovaKiwi</span>
-                </div>
+                </Link>
                 <div className="px-1">
                     <span className="text-xs font-semibold text-muted-foreground uppercase tracking-wider">Admin Console</span>
                 </div>
