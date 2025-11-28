@@ -4,6 +4,14 @@ import { ProgressSteps } from "@/components/project/progress-steps"
 import { ChatInterface } from "@/components/project/chat-interface"
 import { OutputPreview } from "@/components/project/output-preview"
 
+export async function generateStaticParams() {
+    return [
+        { id: '1' },
+        { id: '2' },
+        { id: '3' },
+    ]
+}
+
 export default function ProjectPage() {
     return (
         <div className="h-[calc(100vh-64px)] p-6 gap-6 grid grid-cols-12">
